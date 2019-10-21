@@ -1,7 +1,5 @@
-
-
 def computer_guess
-  rand(1..6)
+  rand(6)+1
 end
 
 def win
@@ -17,15 +15,15 @@ def quit
 end
 
 def get_user_input
-  puts "Guess a number between 1 and 6!"
+  #puts "Guess a number between 1 and 6!"
   user = gets.chomp
   if user.to_s == 'exit'
     quit
-  elsif !(user.to_i >= 1) && !(user.to_i <= 6)
-    puts "Invalid. Try again!"
-    get_user_input
+  #elsif !(1 <= user.to_i) && !(user.to_i <= 6)
+  #  puts "Invalid. Try again!"
+  #  get_user_input
   end
-  user
+  user.to_i
 end
   
 def run_guessing_game
