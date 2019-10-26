@@ -1,4 +1,4 @@
-# Build a Guessing Game in the CLI
+  # Build a Guessing Game in the CLI
 
 ## Learning Goals
 
